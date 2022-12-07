@@ -1,5 +1,6 @@
 const express=require('express')
 const e=express();
+e.set('view engine', 'ejs')
 e.get('/',(req,res)=>
 {
     res.render("<class = 'grocery' ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>")
